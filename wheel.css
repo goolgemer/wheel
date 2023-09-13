@@ -12,8 +12,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100wv;
-  /* overflow: hidden; */
+  width: 100vw;
+  overflow: hidden;
   position: relative;
   margin: 0;
 }
@@ -349,8 +349,8 @@ body {
 
   transform: translateX(-50%, -50%);
   z-index: 10;
-  background-color: rgba(128, 255, 0, 0.082);
-  border: 8px solid rgba(178, 34, 34, 0.068);
+  background-color: rgba(128, 255, 0, 0);
+  border: 8px solid rgba(178, 34, 34, 0);
   font-size: 12px;
   width: 120px;
   height: 120px;
@@ -366,11 +366,12 @@ body {
 @media (max-width: 723px) {
   body {
     background-image: url("img/Group723.png");
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     object-fit: cover;
+    margin: 0 auto;
   }
 
   .content {
@@ -387,6 +388,14 @@ body {
   }
   .wheel_box {
     order: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 344px;
+    margin-top: 200px;
+    position: relative;
   }
 
   .header {
@@ -448,8 +457,8 @@ body {
 
   .wheel_bg {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     transition: 5s;
   }
 
@@ -470,6 +479,22 @@ body {
     transition: 5s;
     text-align: center;
     transition-timing-function: ease-in-out;
+  }
+
+  .container div {
+    height: 50%;
+    width: 75px;
+    position: absolute;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    left: 135px;
   }
 
   .container .one {
