@@ -13,8 +13,9 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100wv;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
+  margin: 0;
 }
 
 .main_image {
@@ -111,7 +112,7 @@ body {
 }
 
 .play_button-mobile {
-  background-image: url("imgs/Button.png");
+  background-image: url("img/Button.png");
   background-position: center;
   background-size: contain;
   background-color: rgba(240, 248, 255, 0);
@@ -120,10 +121,12 @@ body {
   height: 119px;
   background-repeat: no-repeat;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  color: rgb(0, 0, 0);
-  text-align: center;
+  color: #f5ebeb;
+  font-family: Russo One;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   display: none;
 }
 
@@ -358,4 +361,275 @@ body {
   margin: 0;
   padding: 0;
   z-index: 10;
+}
+
+@media (max-width: 723px) {
+  body {
+    background-image: url("img/Group723.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    order: 1;
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .wheel_box {
+    order: 2;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .main_header {
+    color: #fff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    max-width: 351px;
+  }
+
+  .main_paragraph {
+    color: #fff;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .main_image {
+    width: 349px;
+    height: 369px;
+    z-index: 3;
+  }
+
+  .play_button {
+    font-size: 20px;
+    margin-bottom: 48px;
+    margin-top: -20px;
+    z-index: 5;
+    display: none;
+  }
+
+  .play_button-mobile {
+    display: block;
+    width: 161px;
+    height: 62px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 14px;
+
+    z-index: 5;
+  }
+
+  .wheel_box {
+    height: 0;
+  }
+
+  .wheel_bg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transition: 5s;
+  }
+
+  .wheel_frame {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+  }
+
+  .container {
+    width: 500px;
+    height: 350px;
+    background-color: rgba(41, 41, 41, 0);
+    border-radius: 50%;
+    /* border: 15px solid rgba(133, 133, 133, 0); */
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+    text-align: center;
+    transition-timing-function: ease-in-out;
+  }
+
+  .container .one {
+    background-color: rgba(165, 42, 42, 0);
+    left: 50%;
+    color: #fc1a15;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .two {
+    background-color: rgba(255, 5, 5, 0);
+    transform: rotate(60deg);
+    color: #ff0000;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .three {
+    background-color: rgba(165, 157, 42, 0);
+    transform: rotate(90deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .four {
+    background-color: rgba(42, 165, 128, 0);
+    transform: rotate(120deg);
+    color: #ff0000;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .five {
+    background-color: rgba(42, 116, 165, 0);
+    transform: rotate(150deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .six {
+    background-color: rgb(52, 165, 0, 0);
+    transform: rotate(180deg);
+    color: #ff0000;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .seven {
+    background-color: rgb(243, 92, 0, 0);
+    transform: rotate(210deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .eight {
+    background-color: rgb(68, 59, 0, 0);
+    transform: rotate(240deg);
+    color: #ff0000;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .nine {
+    background-color: rgb(165, 42, 0, 0);
+    transform: rotate(270deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .ten {
+    background-color: rgb(82, 44, 0, 0);
+    transform: rotate(300deg);
+    color: #ff0000;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .eleven {
+    background-color: rgb(82, 44, 0, 0);
+    transform: rotate(330deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .twelve {
+    background-color: rgb(82, 44, 0, 0);
+    transform: rotate(360deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container .thirteen {
+    background-color: rgb(82, 44, 0, 0);
+    transform: rotate(390deg);
+    color: #ffffff;
+    text-align: center;
+    font-family: Russo One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .arrow {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
 }

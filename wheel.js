@@ -46,11 +46,11 @@ function spin() {
     container.style.transition = "1s";
     wheelBG.style.transition = "1s";
     if (clockwise) {
-      container.style.transform = "rotate(-90deg)";
-      wheelBG.style.transform = "rotate(-90deg)";
+      container.style.transform = "rotate(-5deg)";
+      wheelBG.style.transform = "rotate(-5deg)";
     } else {
-      container.style.transform = "rotate(90deg)";
-      wheelBG.style.transform = "rotate(90deg)";
+      container.style.transform = "rotate(5deg)";
+      wheelBG.style.transform = "rotate(5deg)";
     }
    
     clockwise = !clockwise;
