@@ -2,6 +2,9 @@
 
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Russo One', sans-serif; */
+html {
+  overflow-x: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -22,8 +25,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 647px;
-  width: 446px;
+  /* height: 647px;
+  width: 446px; */
+  /* height: 60%; */
+  width: 22%;
   z-index: -1;
   margin: 0;
   padding: 0;
@@ -526,20 +531,20 @@ body {
 
   .wheel_bg {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
     transition: 5s;
   }
 
   .wheel_frame {
     position: absolute;
-    width: 370px;
-    height: 370px;
+    width: 400px;
+    height: 400px;
   }
 
   .container {
     width: 500px;
-    height: 350px;
+    height: 370px;
     background-color: rgba(41, 41, 41, 0);
     border-radius: 50%;
     /* border: 15px solid rgba(133, 133, 133, 0); */
@@ -552,7 +557,7 @@ body {
 
   .container div {
     height: 50%;
-    width: 75px;
+    width: 85px;
     position: absolute;
     clip-path: polygon(100% 0, 50% 100%, 0 0);
     transform: translateX(-50%);
@@ -567,11 +572,11 @@ body {
 
   .container .one {
     background-color: rgba(165, 42, 42, 0);
-    transform: rotate(24deg);
+    transform: rotate(21deg);
     color: #fdfdfd;
     text-align: center;
     font-family: Russo One;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -646,7 +651,7 @@ body {
 
   .container .eight {
     background-color: rgb(68, 59, 0, 0);
-    transform: rotate(340deg);
+    transform: rotate(338deg);
     color: #ff0000;
     text-align: center;
     font-family: Russo One;
@@ -677,9 +682,9 @@ body {
   }
 
   .popup_button {
-    font-size: 24px;
+    font-size: 22px;
     max-width: 212px;
-    height: 53px;
+    height: 63px;
     background-position: center;
     background-size: contain;
     margin: 0 auto;
