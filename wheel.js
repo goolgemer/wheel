@@ -7,18 +7,27 @@ let animationRunning = false;
 let popup = document.querySelector('.popup');
 let spinBtn = document.getElementById('spin');
 
+
+window.addEventListener('load', () => {
+  if (document.cookie.includes('wheelSpun')) {
+    popup.classList.add('popup_active');}
+});
+
 btn.addEventListener("click", (event) => {
   if (document.cookie.includes('wheelSpun')) {
-   console.log("SPINED!"); 
+    popup.classList.add('popup_active');
   } else {
     if (animationRunning) {
       stopAnimation();
     } else {
       justSpin(spinDeg);
-      document.cookie = 'wheelSpun=true';
+      const expirationDate = new Date();
+      expirationDate.setDate(expirationDate.getDate() + 10);
+      document.cookie = 'wheelSpun=true; expires=' + expirationDate.toUTCString();
     }
   }
 });
+
 
 function justSpin(deg = "0deg") {
   container.style.transition = "5s";
