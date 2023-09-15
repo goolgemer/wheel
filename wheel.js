@@ -10,21 +10,16 @@ let spinBtn = document.getElementById('spin');
 
 window.addEventListener('load', () => {
   if (document.cookie.includes('wheelSpun')) {
-    popup.classList.add('popup_active');}
+    popup.classList.add('popup_active');
+  }
 });
 
 btn.addEventListener("click", (event) => {
-  if (document.cookie.includes('wheelSpun')) {
-    popup.classList.add('popup_active');
+  if (animationRunning) {
+       stopAnimation();
   } else {
-    if (animationRunning) {
-      stopAnimation();
-    } else {
-      justSpin(spinDeg);
-      const expirationDate = new Date();
-      expirationDate.setDate(expirationDate.getDate() + 10);
-      document.cookie = 'wheelSpun=true; expires=' + expirationDate.toUTCString();
-    }
+    justSpin(spinDeg);
+    document.cookie = 'wheelSpun=true';
   }
 });
 
