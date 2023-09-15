@@ -332,7 +332,7 @@ body {
 }
 
 .popup {
-  /* display: none; */
+  display: none;
   transition: visibility 0.2s linear, opacity 0.2s linear;
   position: fixed;
   align-items: center;
