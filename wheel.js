@@ -8,16 +8,16 @@ let popup = document.querySelector('.popup');
 let spinBtn = document.getElementById('spin');
 
 btn.addEventListener("click", (event) => {
-  
-  if (animationRunning) {
-       stopAnimation();
+  if (document.cookie.includes('wheelSpun')) {
+   console.log("SPINED!"); 
+  } else {
+    if (animationRunning) {
+      stopAnimation();
+    } else {
+      justSpin(spinDeg);
+      document.cookie = 'wheelSpun=true';
+    }
   }
-
-  
-  else {
-    justSpin(spinDeg);
-  }
-   
 });
 
 function justSpin(deg = "0deg") {
@@ -83,6 +83,3 @@ setTimeout(() => {
 
 
 
-// 8 сектаров
-// POP-UP
-//Кнопка в центре
