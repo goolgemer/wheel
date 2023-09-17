@@ -707,8 +707,8 @@ body {
   }
 
   .popup_container {
-    max-width: 341px;
-    height: 432px;
+    max-width: 333px;
+    height: 422px;
   }
 
   .popup_content {
@@ -716,7 +716,7 @@ body {
   }
 
   .popup_title {
-    font-size: 28px;
+    font-size: 26px;
     margin: 0;
   }
 
@@ -724,14 +724,14 @@ body {
     font-size: 32px;
     font-weight: 400;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 0;
   }
 
   .popup_paragraph {
-    font-size: 23px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
     line-height: 32.74px;
   }
 
