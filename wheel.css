@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Russo+One&display=swap");
 
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Russo One', sans-serif; */
@@ -370,7 +370,7 @@ body {
   max-width: calc(100% - 72px);
   margin: 0 auto;
   border: none;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .popup_title {
@@ -384,6 +384,7 @@ body {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 
 .popup_subtitle {
@@ -393,8 +394,9 @@ body {
   line-height: 58px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 5px;
+  color: #e34137;
 }
 
 .popup_paragraph {
@@ -405,9 +407,10 @@ body {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 
 .popup_button {
@@ -423,7 +426,7 @@ body {
   width: 300px;
   height: 80px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   margin: 0 auto;
   cursor: pointer;
   object-fit: fill;
@@ -709,7 +712,7 @@ body {
   }
 
   .popup_content {
-    padding-top: 15%;
+    padding-top: 23%;
   }
 
   .popup_title {
@@ -720,7 +723,7 @@ body {
   .popup_subtitle {
     font-size: 32px;
     font-weight: 400;
-    margin-top: 13%;
+    margin-top: 3%;
     margin-bottom: 3%;
   }
 
@@ -728,7 +731,7 @@ body {
     font-size: 23px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 18%;
+    margin-bottom: 4%;
     line-height: 32.74px;
   }
 
